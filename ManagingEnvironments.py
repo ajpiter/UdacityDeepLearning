@@ -10,10 +10,12 @@ conda create -n py3 python=3
 #or 
 conda create -n py2 python=2 
 
-#Entering an environment use source activate my_first_environemnt
+#Entering an environment use 
+source activate my_first_environemnt
 #When you are in the environment you'll see the environment name in the terminal prompt 
 #The environment only has a few packages installed 
-#install packages with conda install package_name
+#install packages with 
+conda install package_name
 #will install the package only in the environment 
 
 #Leave the environment 
