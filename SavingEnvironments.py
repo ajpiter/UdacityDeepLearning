@@ -14,3 +14,5 @@ conda env list
 
 #Removing environments 
 conda env remove -n env_name
+
+#Best practice to share an environment file in a github repository for a project 
