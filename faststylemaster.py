@@ -9,9 +9,12 @@ pip install tensorflow
 conda install scipy pillow
 
 #Enter the conda environment in the terminal 
+source activate style-transfer 
+
+#find the folder with the saved items 
 ls 
 cd desktop 
-source activate style-transfer 
+cd fast-style-transfer-master
 
 #where <path_toinput_file> is the jpg file you want to change such as amanda.jpg 
 #where the ./output_image.jpg is the name of the new file you are saving 
