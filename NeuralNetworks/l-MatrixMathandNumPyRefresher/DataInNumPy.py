@@ -34,7 +34,7 @@ matrixvariable[1][2]
 
 #Tensors 
 #Tensors have more dimensions, below is an example of a 3x3x2x1 tensor
-tensorvariable = np.array([[[[1],[2]],[[3],[4]],[[5],[6]]],[[[7],[8]],\[[9],[10]],[[11],[12]]],[[[13],[14]],[[15],[16]],[[17],[17]]]])
+tensorvariable = np.array([[[[1],[2]],[[3],[4]],[[5],[6]]],[[[7],[8]],[[9],[10]],[[11],[12]]],[[[13],[14]],[[15],[16]],[[17],[17]]]])
 tensorvariable.shape
 #would return (3, 3, 2, 1) 
 #index tensorvariable[2][1][1][0] would return 16 
@@ -46,6 +46,13 @@ vectorvariable.shape
 #returns (4,) confirming the shape of a vector 
 variable = vectorvariable.reshape(1,4) 
 variable.shape
-#returns (1, 4) confirming a matrix 
+#returns (1, 4) confirming a row matrix 
+#OR
+variable = vectorvariable.reshape(4,1) 
+#returns (4, 1) confirming a column matrix
+#You can also drop the .reshape command all together and write 
+variable = vectorvariable[None, :]
+#OR 
+variable = vectorvariable[:, None] 
 
 
